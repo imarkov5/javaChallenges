@@ -9,19 +9,6 @@ import java.util.stream.Collectors;
 
 public class Main {
 
-
-    public static int diagonalDifference(List<List<Integer>> arr) {
-        int sumOne = 0;
-        int sumTwo = 0;
-        int absDiff;
-        for(int row = 0; row < arr.size(); row ++){
-            sumOne += arr.get(row).get(row);
-            sumTwo += arr.get(row).get(arr.size()-1-row);
-        }
-        absDiff = Math.abs(sumOne - sumTwo);
-        return absDiff;
-    }
-
     public static List<Integer> countingSort(List<Integer> arr) {
 
         System.out.println("array " + arr);
@@ -135,7 +122,7 @@ public class Main {
         twoDim.add(Arrays.asList(56,125,56,49));
         twoDim.add(Arrays.asList(15,78,101,43));
         twoDim.add(Arrays.asList(62,98,114,108));
-//        System.out.println(diagonalDifference(twoDim));
+
 
         List<Integer> arr = new ArrayList<>();
 
